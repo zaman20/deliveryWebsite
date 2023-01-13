@@ -47,3 +47,31 @@
     clear: both;
     margin-top: 30px;
 }
+.search-area{
+    width:100%;
+}
+.s-box{
+    width: 23%;
+    float: left;
+    margin:1%;
+}
+.truck-details-list {
+    clear: both;
+    width: 98%;
+    height: 110px;
+    background: #fdfcf2;
+    border-radius: 5px;
+    border: 1px solid rgb(201, 201, 201);
+    padding: 10px 20px;
+    margin: 10px;
+}
+.truck-details-list:hover{
+    background:rgb(252, 236, 132);
+}
+.trucks-name,.trucks-point, .delivery-time, .upload-date-time{
+    width:23%;
+    float:right;
+}
+.trucks-name{
+    width:31%;
+}
