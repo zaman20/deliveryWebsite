@@ -1,0 +1,49 @@
+.top-bar{
+    background: blueviolet;
+}
+.right-menu{
+    width: 40%;
+    float:right;
+}
+.left-menu{
+    width:35%;
+    float:left;
+}
+
+.right-menu ul li, .left-menu ul li{
+    display: inline-block;
+    padding:10px 15px;
+}
+.right-menu ul li a, .left-menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: bisque;
+}
+.right-menu ul li a i, .left-menu ul li a i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+.table-section{clear:both;}
+.table-title{
+    width:80%;
+    float:right;
+    margin-top: 20px;
+}
+.export-btn{
+    width:200px;
+    height: 50px;
+    float:left;
+    margin-top: 20px;
+    bottom:20px;
+    border: 2px solid rgb(205, 205, 205);
+    font-size: 18px;
+    transition: 0.3s;
+}
+.export-btn:hover{
+    background:rgb(86, 85, 85);
+    color: white;
+}
+.table{
+    clear: both;
+    margin-top: 30px;
+}
