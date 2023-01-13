@@ -75,3 +75,24 @@
 .trucks-name{
     width:31%;
 }
+.data-part{
+    width: 60%;
+    float:right;
+}
+.details {
+    background: rgb(203, 203, 203);
+    width: 95%;
+    /* height: 60px; */
+    /* padding: 10px 15px; */
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.details p{
+    margin-right: 10px;
+}
+.details .driver-name{
+    width: 74%;
+}
