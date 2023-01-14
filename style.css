@@ -49,13 +49,19 @@
 }
 .search-area{
     width:100%;
+    clear: both;
 }
 .s-box{
-    width: 23%;
+    width: 21%;
     float: left;
     margin:1%;
 }
-.truck-details-list {
+.ts-box{
+    width: 240px;
+    float: left;
+    margin:5px;
+}
+.truck-details-list, .task-details-list {
     clear: both;
     width: 98%;
     height: 110px;
@@ -117,4 +123,21 @@
 }
 .login-btn:hover{
     background:#1335f8;
+}
+.task-id,.task-name, .task-point, .status-icon, .upload-date, .status, .location-select{
+    width:10%;
+    float:right;
+}
+.task-name{
+    width:23%;
+    margin-left:10px;
+    
+}
+.task-name h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+.task-point{width: 25%;}
+.task-details-list:hover{
+    background:wheat;
 }
