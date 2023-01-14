@@ -57,7 +57,7 @@
     margin:1%;
 }
 .ts-box{
-    width: 240px;
+    width: 202px;
     float: left;
     margin:5px;
 }
@@ -124,9 +124,15 @@
 .login-btn:hover{
     background:#1335f8;
 }
-.task-id,.task-name, .task-point, .status-icon, .upload-date, .status, .location-select{
+.task-id,.task-name, .task-point, .upload-date, .status, .location-select{
     width:10%;
-    float:right;
+    /* float:right; */
+}
+.status-icon{width: 8%;}
+.factor{width: 10%;}
+.task-list{
+    clear: both;
+    margin-top: 60px;
 }
 .task-name{
     width:23%;

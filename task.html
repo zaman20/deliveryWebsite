@@ -37,36 +37,36 @@
                 <h3 class="table-title">Tasks</h3>
                 
                 <div class="search-area">
-                    <input type="text" class="form-control ts-box" placeholder="Search There">
-                    <select name="" id="" class="form-select ts-box" aria-label="Default select example">
-                        <option value="" selected>Status</option>
-                        <option value="">Done</option>
-                        <option value="">Fails</option>
-                        <option value="">New</option>
-                        <option value="">Wrong</option>
-                        <option value="">Cancelled</option>
-                        <option value="">Are Open</option>
-                        <option value="">Team for the driver</option>
-                        <option value="">In Execution</option>
+                    <input type="text" class="form-control ts-box search-field" placeholder="Search There">
+                    <select name="" id="status-select" class="form-select ts-box on-change" aria-label="Default select example">
+                        <option value="0" selected>Status-all</option>
+                        <option value="Done">Done</option>
+                        <option value="Fails">Fails</option>
+                        <option value="New">New</option>
+                        <option value="Wrong">Wrong</option>
+                        <option value="Cancelled">Cancelled</option>
+                        <option value="Are-Open">Are Open</option>
+                        <option value="Team-driver">Team for the driver</option>
+                        <option value="Execution">In Execution</option>
                     </select>
-                    <select name="" id="" class="form-select ts-box" aria-label="Default select example">
-                        <option value="" selected>Factor- everything</option>
-                        <option value="">BUBL</option>
-                        <option value="">Babyjoy</option>
-                        <option value="">Comjet</option> 
-                        <option value="">Ebikini</option>
-                        <option value="">Fixlab sm</option>
-                        <option value="">Happy pack</option>
-                        <option value="">Wisdom tech</option>
+                    <select name="" id="factor-select" class="form-select ts-box on-change" aria-label="Default select example">
+                        <option value="0" selected>Factor- everything</option>
+                        <option value="BUBL">BUBL</option>
+                        <option value="Babyjoy">Babyjoy</option>
+                        <option value="Comjet">Comjet</option> 
+                        <option value="Ebikini">Ebikini</option>
+                        <option value="Fixlab">Fixlab sm</option>
+                        <option value="Happy">Happy pack</option>
+                        <option value="Wisdom">Wisdom tech</option>
                     </select>
-                    <select name="" id="" class="form-select ts-box" aria-label="Default select example">
-                        <option value="" selected>Driver everything</option>
-                        <option value="">Without a driver</option>
-                        <option value="">Roni</option>
-                        <option value="">Zuki</option>
-                        <option value="">Eden</option> 
-                        <option value="">Moshe Kozari</option>
-                        <option value="">Gerry</option>
+                    <select name="" id="" class="form-select ts-box on-change" aria-label="Default select example">
+                        <option value="0" selected>Driver everything</option>
+                        <option value="1">Without a driver</option>
+                        <option value="Roni">Roni</option>
+                        <option value="Zuki">Zuki</option>
+                        <option value="Eden">Eden</option> 
+                        <option value="Moshe">Moshe Kozari</option>
+                        <option value="Gerry">Gerry</option>
                     </select>
                     <select name="" id="" class="form-select ts-box" aria-label="Default select example">
                         <option value="" selected>Address</option>
@@ -78,9 +78,47 @@
                         <option value="">Recipient Mobile</option>
                     </select>
                     <input type="date" class="form-control ts-box">
+                    <input type="date" class="form-control ts-box">
                 </div>
                 <!-- details list -->
-                <div class="task-details-list">
+               <div class="task-list">
+                <table class="table ">
+                    <tr class="task-details-list">
+                        <td class="task-id">40324</td>
+                        <td class="task-name"> Reuven 1, Rishon Lezion</td>
+                        <td class="factor">Pick a roll</td>
+                        <td class="task-point">Marina Kleiman 05057571252</td>
+                        <td>Eden</td>
+                        <td class="status-icon"><i class="fa-solid fa-car"></i></td>
+                        <td class="upload-date">Date:01/11/2023</td>
+                        <td class="status"><p class="btn btn-primary">New</p></td>
+                        <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
+                    </tr>
+                    <tr class="task-details-list">
+                        <td class="task-id">40384</td>
+                        <td class="task-name">Reuven 1, Rishon Lezion</td>
+                        <td class="factor">BUBL</td>
+                        <td class="task-point">Marina Kleiman 05057571252</td>
+                        <td>Zuki</td>
+                        <td class="status-icon"><i class="fa-solid fa-car"></i></td>
+                        <td class="upload-date">Date:10-01-23</td>
+                        <td class="status"><p class="btn btn-danger">Cancelled</p></td>
+                        <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
+                    </tr>
+                    <tr class="task-details-list">
+                        <td class="task-id">40329</td>
+                        <td class="task-name"> Reuven 1, Rishon Lezion</td>
+                        <td class="factor">Comjet</td>
+                        <td class="task-point">Marina Kleiman 05057571252</td>
+                        <td>Roni</td>
+                        <td class="status-icon"><i class="fa-solid fa-car"></i></td>
+                        <td class="upload-date">Date:10-01-23</td>
+                        <td class="status"><p class="btn btn-success">Done</p></td>
+                        <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
+                    </tr>
+                </table>
+               </div>
+                <!-- <div class="task-details-list">
                     <div class="task-id">
                         <p>40327</p>
                     </div>
@@ -103,61 +141,8 @@
                     <div class="location-select">
                         <i class="fa-regular fa-location-dot"></i>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="task-details-list">
-                    <div class="task-id">
-                        <p>40327</p>
-                        <p>Order #25469</p>
-                    </div>
-                    <div class="task-name">
-                        <h3>floor 7, apartment 13, building code #2255</h3>
-                        <p>The Trilotherapy Center at p</p>
-                    </div>
-                    <div class="task-point">
-                        <p>21 Sderot Menachem Begin, Hadera</p>
-                        <p>Naomi Kenan 05057571252</p>
-                    </div>
-                    <div class="status-icon">
-                        <i class="fa-solid fa-car"></i>
-                    </div>
-                    <div class="upload-date">
-                        <p>Date:10-01-23</p>
-                    </div>
-                    <div class="status">
-                        <p class="btn btn-success">Done</p>
-                    </div>
-                    <div class="location-select">
-                        <i class="fa-regular fa-location-dot"></i>
-                    </div>
-                </div>
-
-                <div class="task-details-list">
-                    <div class="task-id">
-                        <p>623800</p>
-                        <p>Order #25465</p>
-                    </div>
-                    <div class="task-name">
-                        <h3>Kora 3 apartment 7 access code #0852#</h3>
-                        <p>The Trilotherapy Center at p</p>
-                    </div>
-                    <div class="task-point">
-                        <p>David Ben Gurion 54, Ramat Gan</p>
-                        <p>Lior Fish 05057571252</p>
-                    </div>
-                    <div class="status-icon">
-                        <i class="fa-solid fa-car"></i>
-                    </div>
-                    <div class="upload-date">
-                        <p>Date:1-13-23</p>
-                    </div>
-                    <div class="status">
-                        <p class="btn btn-danger">Old</p>
-                    </div>
-                    <div class="location-select">
-                        <i class="fa-regular fa-location-dot"></i>
-                    </div>
-                </div>
 
 
             </div>
@@ -167,6 +152,32 @@
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    
+    <script src="js/script.js"></script>
+
+    <script>
+        $('.on-change').on('change',function(){
+            let data =$(this).val();
+            if(data == 0){$('.task-list tr').show();}
+
+            else{
+           // alert(data);
+           $('.task-list tr').hide();
+           $('.task-list td ').filter(function(){
+            return $(this).text()== data;
+           }).parent().show();}
+        });
+        
+        let input = document.querySelector(".search-field");
+        input.addEventListener('keyup',(e)=>{
+            if(e.keyCode === 13){
+                let data = e.target.value;
+            $('.task-list tr').hide();
+            $('.task-list td ').filter(function(){
+                return $(this).text()==data;
+            }).parent().show();}
+            
+        })
+
+    </script>
 </body>
 </html>
