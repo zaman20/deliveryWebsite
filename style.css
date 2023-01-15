@@ -147,3 +147,25 @@
 .task-details-list:hover{
     background:wheat;
 }
+.bottom-part {
+    width: 100%;
+    margin: 0 auto;
+    background: #8A2BE2;
+    height: 40px;
+    padding: 10px;
+    clear: both;
+    text-align: center;
+    color: white;
+}
+.opt-btn{
+    width:180px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.opt-btn i{
+    margin-left:5px;
+}
+.driver-name span{
+    font-size: 18px;
+    font-weight: 300;
+}
