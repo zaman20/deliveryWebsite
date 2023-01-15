@@ -29,6 +29,15 @@
     float:right;
     margin-top: 20px;
 }
+.add-new-btn{
+    float: left;
+    width: 10%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.add-new-btn i{
+    margin-left: 5px;
+}
 .export-btn{
     width:200px;
     height: 50px;
@@ -169,3 +178,19 @@
     font-size: 18px;
     font-weight: 300;
 }
+.add-new-task {
+    width: 90%;
+    margin: 0 auto;
+    background: #dddcdc;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.add-new-task h3{
+    text-align: center;
+    margin-top: 20px;
+}
+.add-new-task label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.wh{height: 50px;}

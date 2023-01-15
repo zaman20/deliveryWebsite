@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delivery Management</title>
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- style sheet link -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row">
@@ -26,7 +31,7 @@
                 </div>
 
                 <div class="left-menu">
-                    <ul> 
+                    <ul>
                         <li><a href="">Distribution Area<i class="fa-solid fa-list"></i></a></li>
                         <li><a href="">Profile<i class="fa-solid fa-user"></i></a></li>
                         <li><a href="">Log-Out<i class="fa-solid fa-right-from-bracket"></i></a></li>
@@ -35,10 +40,12 @@
             </div>
             <div class="col-lg-12 table-section px-3">
                 <h3 class="table-title">Tasks</h3>
-                
+                <a href="add-new-task.html" class="btn btn-dark add-new-btn"><i class="fa-solid fa-plus"></i>Add New
+                    Task</a>
                 <div class="search-area">
                     <input type="text" class="form-control ts-box search-field" placeholder="Search There">
-                    <select name="" id="status-select" class="form-select ts-box on-change" aria-label="Default select example">
+                    <select name="" id="status-select" class="form-select ts-box on-change"
+                        aria-label="Default select example">
                         <option value="0" selected>Status-all</option>
                         <option value="Done">Done</option>
                         <option value="Fails">Fails</option>
@@ -49,11 +56,12 @@
                         <option value="Team-driver">Team for the driver</option>
                         <option value="Execution">In Execution</option>
                     </select>
-                    <select name="" id="factor-select" class="form-select ts-box on-change" aria-label="Default select example">
+                    <select name="" id="factor-select" class="form-select ts-box on-change"
+                        aria-label="Default select example">
                         <option value="0" selected>Factor- everything</option>
                         <option value="BUBL">BUBL</option>
                         <option value="Babyjoy">Babyjoy</option>
-                        <option value="Comjet">Comjet</option> 
+                        <option value="Comjet">Comjet</option>
                         <option value="Ebikini">Ebikini</option>
                         <option value="Fixlab">Fixlab sm</option>
                         <option value="Happy">Happy pack</option>
@@ -64,7 +72,7 @@
                         <option value="1">Without a driver</option>
                         <option value="Roni">Roni</option>
                         <option value="Zuki">Zuki</option>
-                        <option value="Eden">Eden</option> 
+                        <option value="Eden">Eden</option>
                         <option value="Moshe">Moshe Kozari</option>
                         <option value="Gerry">Gerry</option>
                     </select>
@@ -73,7 +81,7 @@
                         <option value="">Task tax</option>
                         <option value="">Her Certificate</option>
                         <option value="">Reference 2</option>
-                        <option value="">Eden</option> 
+                        <option value="">Eden</option>
                         <option value="">Recipient Name</option>
                         <option value="">Recipient Mobile</option>
                     </select>
@@ -81,43 +89,49 @@
                     <input type="date" class="form-control ts-box">
                 </div>
                 <!-- details list -->
-               <div class="task-list">
-                <table class="table ">
-                    <tr class="task-details-list">
-                        <td class="task-id">40324</td>
-                        <td class="task-name"> Reuven 1, Rishon Lezion</td>
-                        <td class="factor">Pick a roll</td>
-                        <td class="task-point">Marina Kleiman 05057571252</td>
-                        <td>Eden</td>
-                        <td class="status-icon"><i class="fa-solid fa-car"></i></td>
-                        <td class="upload-date">Date:01/11/2023</td>
-                        <td class="status"><p class="btn btn-primary">New</p></td>
-                        <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
-                    </tr>
-                    <tr class="task-details-list">
-                        <td class="task-id">40384</td>
-                        <td class="task-name">Reuven 1, Rishon Lezion</td>
-                        <td class="factor">BUBL</td>
-                        <td class="task-point">Marina Kleiman 05057571252</td>
-                        <td>Zuki</td>
-                        <td class="status-icon"><i class="fa-solid fa-car"></i></td>
-                        <td class="upload-date">Date:10-01-23</td>
-                        <td class="status"><p class="btn btn-danger">Cancelled</p></td>
-                        <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
-                    </tr>
-                    <tr class="task-details-list">
-                        <td class="task-id">40329</td>
-                        <td class="task-name"> Reuven 1, Rishon Lezion</td>
-                        <td class="factor">Comjet</td>
-                        <td class="task-point">Marina Kleiman 05057571252</td>
-                        <td>Roni</td>
-                        <td class="status-icon"><i class="fa-solid fa-car"></i></td>
-                        <td class="upload-date">Date:10-01-23</td>
-                        <td class="status"><p class="btn btn-success">Done</p></td>
-                        <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
-                    </tr>
-                </table>
-               </div>
+                <div class="task-list">
+                    <table class="table ">
+                        <tr class="task-details-list">
+                            <td class="task-id">40324</td>
+                            <td class="task-name"> Reuven 1, Rishon Lezion</td>
+                            <td class="factor">Pick a roll</td>
+                            <td class="task-point">Marina Kleiman 05057571252</td>
+                            <td>Eden</td>
+                            <td class="status-icon"><i class="fa-solid fa-car"></i></td>
+                            <td class="upload-date">Date:01/11/2023</td>
+                            <td class="status">
+                                <p class="btn btn-primary">New</p>
+                            </td>
+                            <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
+                        </tr>
+                        <tr class="task-details-list">
+                            <td class="task-id">40384</td>
+                            <td class="task-name">Reuven 1, Rishon Lezion</td>
+                            <td class="factor">BUBL</td>
+                            <td class="task-point">Marina Kleiman 05057571252</td>
+                            <td>Zuki</td>
+                            <td class="status-icon"><i class="fa-solid fa-car"></i></td>
+                            <td class="upload-date">Date:10-01-23</td>
+                            <td class="status">
+                                <p class="btn btn-danger">Cancelled</p>
+                            </td>
+                            <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
+                        </tr>
+                        <tr class="task-details-list">
+                            <td class="task-id">40329</td>
+                            <td class="task-name"> Reuven 1, Rishon Lezion</td>
+                            <td class="factor">Comjet</td>
+                            <td class="task-point">Marina Kleiman 05057571252</td>
+                            <td>Roni</td>
+                            <td class="status-icon"><i class="fa-solid fa-car"></i></td>
+                            <td class="upload-date">Date:10-01-23</td>
+                            <td class="status">
+                                <p class="btn btn-success">Done</p>
+                            </td>
+                            <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
+                        </tr>
+                    </table>
+                </div>
                 <!-- <div class="task-details-list">
                     <div class="task-id">
                         <p>40327</p>
@@ -143,41 +157,14 @@
                     </div>
                 </div> -->
 
-
-
             </div>
         </div>
     </div>
 
-
-
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
 
-    <script>
-        $('.on-change').on('change',function(){
-            let data =$(this).val();
-            if(data == 0){$('.task-list tr').show();}
 
-            else{
-           // alert(data);
-           $('.task-list tr').hide();
-           $('.task-list td ').filter(function(){
-            return $(this).text()== data;
-           }).parent().show();}
-        });
-        
-        let input = document.querySelector(".search-field");
-        input.addEventListener('keyup',(e)=>{
-            if(e.keyCode === 13){
-                let data = e.target.value;
-            $('.task-list tr').hide();
-            $('.task-list td ').filter(function(){
-                return $(this).text()==data;
-            }).parent().show();}
-            
-        })
-
-    </script>
 </body>
+
 </html>
