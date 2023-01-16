@@ -7,10 +7,10 @@ $('.on-change').on('change',function(){
    // alert(data);
    $('.task-list tr').hide();
    $('.task-list td ').filter(function(){
-    return $(this).text()== data;
+    return $(this).text()==data;
    }).parent().show();}
 });
-
+//search by typing
 let input = document.querySelector(".search-field");
 input.addEventListener('keyup',(e)=>{
     if(e.keyCode === 13){
@@ -20,4 +20,18 @@ input.addEventListener('keyup',(e)=>{
         return $(this).text()==data;
     }).parent().show();}
     
+})
+// table click
+$(document.body).on('click',"tr[data-href]",function(){
+    window.location.href = this.dataset.href;
+});
+
+// add_new
+$(".add-new-driver-btn").on('click',function(){
+    //alert('hi');
+    $('.add-new-driver').addClass("add-new-driver-come");
+});
+$(".close-btn").on('click',function(){
+    //alert('hi');
+    $('.add-new-driver').removeClass("add-new-driver-come");
 })

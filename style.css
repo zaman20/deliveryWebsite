@@ -133,7 +133,7 @@
 .login-btn:hover{
     background:#1335f8;
 }
-.task-id,.task-name, .task-point, .upload-date, .status, .location-select{
+.task-id, .task-point, .upload-date, .status, .location-select{
     width:10%;
     /* float:right; */
 }
@@ -178,14 +178,30 @@
     font-size: 18px;
     font-weight: 300;
 }
-.add-new-task {
+.add-new-task, .add-new-driver{
     width: 90%;
     margin: 0 auto;
     background: #dddcdc;
     padding: 10px 20px;
     border-radius: 5px;
 }
-.add-new-task h3{
+.add-new-driver {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    left: 25%;
+    top: -138px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+   
+}
+.add-new-driver-come{
+    top: 25px;
+    visibility: visible;
+    opacity: 1;
+}
+.add-new-task h3, .add-new-driver h3{
     text-align: center;
     margin-top: 20px;
 }
@@ -194,3 +210,12 @@
     font-weight: 500;
 }
 .wh{height: 50px;}
+.truck-task-name{
+    width:15%;
+}
+.truck-note{
+    width: 20%;
+}
+.truck-status{
+    width: 18%;
+}

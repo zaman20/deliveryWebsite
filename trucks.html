@@ -38,23 +38,68 @@
           
               <div class="search-area">
                 <input type="text" class="form-control s-box" placeholder="Search There">
-                <select name="" id="" class="form-select s-box" aria-label="Default select example">
-                    <option value="">without a driver</option>
-                    <option value="">Driver - everything</option>
-                    <option value="">Zuki</option>
-                    <option value="">Eden</option>
-                    <option value="">Moshe Kozari</option>
-                    <option value="">Gerry</option>
+                <select name="" id="dirverName" class="form-select s-box on-change" aria-label="Default select example">
+                    <option value="0">Driver - everything</option>
+                    <option value="1">without a driver</option>
+                    <option value="Zuki">Zuki</option>
+                    <option value="Eden">Eden</option>
+                    <option value="Moshe Kozari">Moshe Kozari</option>
+                    <option value="Gerry">Gerry</option>
                 </select>
-                <select name="" id="" class="form-select s-box" aria-label="Default select example">
-                    <option value="">in planning</option>
-                    <option value="">are open</option>
-                    <option value="">are active</option>
-                    <option value="">are over</option> 
+                <select name="" id="truckStatus" class="form-select s-box on-change" aria-label="Default select example">
+                    <option value="In Planning">In Planning</option>
+                    <option value="Are Open">are open</option>
+                    <option value="Are active">are active</option>
+                    <option value="Are Over">are over</option> 
+                    <option value="Has Been Discontinued">Has Been Discontinued</option> 
                 </select>
                 <input type="date" class="form-control s-box">
               </div>
 
+              <div class="task-list">
+                <table class="table ">
+                    <tr >
+                        <td class="task-id">Id</td>
+                        <td class="truck-task-name">Driver Name</td>
+                        <td class="truck-note">Note</td>
+                        <td class="truck-status">Status</td>
+                        <td class="task-point">Points & KM</td>
+                        <td class="upload-date">Date & Time</td>
+                    </tr>
+                        <tr class="task-details-list" data-href="task-single.html">
+                            <td class="task-id">40324</td>
+                            <td class="truck-task-name">Eden</td>
+                            <td class="truck-note">Pick a roll</td>
+                            <td class="truck-status">
+                                <p class="btn btn-warning">In planning</p>
+                            </td>
+                            <td class="task-point">Points: 22 , KM:450</td>
+                            <td class="upload-date">Date:01/11/2023</td>
+                        </tr>
+                        <tr class="task-details-list" data-href="task-single.html">
+                            <td class="task-id">40324</td>
+                            <td class="truck-task-name">Zuki</td>
+                            <td class="truck-note">Pick a roll</td>
+                            <td class="truck-status">
+                                <p class="btn btn-warning">Has Been Discontinued</p>
+                            </td>
+                            <td class="task-point">Points: 22 , KM:450</td>
+                            <td class="upload-date">Date:01/11/2023</td>
+                        </tr>
+                        <tr class="task-details-list" data-href="task-single.html">
+                            <td class="task-id">40324</td>
+                            <td class="truck-task-name">Gerry</td>
+                            <td class="truck-note">Pick a roll</td>
+                            <td class="truck-status">
+                                <p class="btn btn-warning">In planning</p>
+                            </td>
+                            <td class="task-point">Points: 22 , KM:450</td>
+                            <td class="upload-date">Date:01/11/2023</td>
+                        </tr>
+                   
+                </table>
+            </div>
+<!-- 
               <div class="truck-details-list">
                 <div class="trucks-name">
                     <h3>Ronnie Ronnie</h3>
@@ -73,30 +118,12 @@
                     <p>Time:12.00</p>
                     <p>Date:10-01-23</p>
                 </div>
-              </div>
-              <div class="truck-details-list">
-                <div class="trucks-name">
-                    <h3>Eden</h3>
-                    <span>40327</span>
-                    <span class="btn btn-warning">In Planning</span>
-                </div>
-                <div class="trucks-point">
-                    <p>Points: 22</p>
-                    <p>KM: 403</p>
-                </div>
-                <div class="delivery-time">
-                    <p>22 hours</p>
-                    <p>11 minutes</p>
-                </div>
-                <div class="upload-date-time">
-                    <p>Time: 12.00</p>
-                    <p>Date: 11-01-23</p>
-                </div>
-              </div>
-
-
+              </div> -->
+        
             </div>
         </div>
     </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
