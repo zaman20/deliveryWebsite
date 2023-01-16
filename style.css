@@ -6,10 +6,32 @@
     float:right;
 }
 .left-menu{
-    width:35%;
+    width:40%;
     float:left;
 }
-
+.left-menu ul li{position: relative;}
+.left-menu ul li ul{
+    width:200px;
+    height: auto;
+    background:#8A2BE2;
+    color: white;
+    position: absolute;
+    top:0px;
+    left: 17px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    
+}
+.left-menu ul li ul li{
+    display: block;
+    padding:5px;
+}
+.left-menu ul li:hover ul{
+    top:40px;
+    visibility: visible;
+    opacity: 1;
+}
 .right-menu ul li, .left-menu ul li{
     display: inline-block;
     padding:10px 15px;
@@ -22,6 +44,9 @@
 .right-menu ul li a i, .left-menu ul li a i{
     margin-right: 5px;
     font-size: 18px;
+}
+.right-menu ul li:hover>a, .left-menu ul li:hover> a{
+    text-decoration: underline;
 }
 .table-section{clear:both;}
 .table-title{
@@ -179,13 +204,11 @@
     font-weight: 300;
 }
 .add-new-task, .add-new-driver{
-    width: 90%;
     margin: 0 auto;
     background: #dddcdc;
     padding: 10px 20px;
     border-radius: 5px;
-}
-.add-new-driver {
+    padding-bottom: 24px;
     width: 55%;
     height: auto;
     position: absolute;
@@ -194,6 +217,10 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.4s;
+}
+.add-new-task {
+   width: 90%;
+   left:5%;
    
 }
 .add-new-driver-come{

@@ -25,11 +25,19 @@
                     </ul>
                 </div>
 
+                
                 <div class="left-menu">
-                    <ul> 
+                    <ul>
+                        <li><a href="">More<i class="fa-sharp fa-solid fa-caret-down"></i>
+                            <ul>
+                                <li><a href="users.html">Users</a></li>
+                                <li><a href="drivers.html">Drivers</a></li>
+                                <li><a href="inviting-factor.html">Inviting Factor</a></li>
+                            </ul>
+                        </a></li>
                         <li><a href="">Distribution Area<i class="fa-solid fa-list"></i></a></li>
                         <li><a href="">Profile<i class="fa-solid fa-user"></i></a></li>
-                        <li><a href="">Log-Out<i class="fa-solid fa-right-from-bracket"></i></a></li>
+                        <li><a href="index.html">Log-Out<i class="fa-solid fa-right-from-bracket"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -37,7 +45,7 @@
                 <h3 class="table-title">Trucks</h3>
           
               <div class="search-area">
-                <input type="text" class="form-control s-box" placeholder="Search There">
+                <input type="text" class="form-control s-box search-field" placeholder="Search There">
                 <select name="" id="dirverName" class="form-select s-box on-change" aria-label="Default select example">
                     <option value="0">Driver - everything</option>
                     <option value="1">without a driver</option>
@@ -46,8 +54,9 @@
                     <option value="Moshe Kozari">Moshe Kozari</option>
                     <option value="Gerry">Gerry</option>
                 </select>
-                <select name="" id="truckStatus" class="form-select s-box on-change" aria-label="Default select example">
-                    <option value="In Planning">In Planning</option>
+                <select name="" id="" class="form-select s-box on-change" aria-label="Default select example">
+                    <option value="0">All</option>
+                    <option value="In planning">In Planning</option>
                     <option value="Are Open">are open</option>
                     <option value="Are active">are active</option>
                     <option value="Are Over">are over</option> 
@@ -70,9 +79,7 @@
                             <td class="task-id">40324</td>
                             <td class="truck-task-name">Eden</td>
                             <td class="truck-note">Pick a roll</td>
-                            <td class="truck-status">
-                                <p class="btn btn-warning">In planning</p>
-                            </td>
+                            <td class="truck-status">In planning</td>
                             <td class="task-point">Points: 22 , KM:450</td>
                             <td class="upload-date">Date:01/11/2023</td>
                         </tr>
@@ -80,9 +87,7 @@
                             <td class="task-id">40324</td>
                             <td class="truck-task-name">Zuki</td>
                             <td class="truck-note">Pick a roll</td>
-                            <td class="truck-status">
-                                <p class="btn btn-warning">Has Been Discontinued</p>
-                            </td>
+                            <td class="truck-status">Has Been Discontinued</td>
                             <td class="task-point">Points: 22 , KM:450</td>
                             <td class="upload-date">Date:01/11/2023</td>
                         </tr>
@@ -90,9 +95,7 @@
                             <td class="task-id">40324</td>
                             <td class="truck-task-name">Gerry</td>
                             <td class="truck-note">Pick a roll</td>
-                            <td class="truck-status">
-                                <p class="btn btn-warning">In planning</p>
-                            </td>
+                            <td class="truck-status orange">In planning</td>
                             <td class="task-point">Points: 22 , KM:450</td>
                             <td class="upload-date">Date:01/11/2023</td>
                         </tr>

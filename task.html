@@ -32,16 +32,97 @@
 
                 <div class="left-menu">
                     <ul>
+                        <li><a href="">More<i class="fa-sharp fa-solid fa-caret-down"></i>
+                            <ul>
+                                <li><a href="users.html">Users</a></li>
+                                <li><a href="drivers.html">Drivers</a></li>
+                                <li><a href="inviting-factor.html">Inviting Factor</a></li>
+                            </ul>
+                        </a></li>
                         <li><a href="">Distribution Area<i class="fa-solid fa-list"></i></a></li>
                         <li><a href="">Profile<i class="fa-solid fa-user"></i></a></li>
-                        <li><a href="">Log-Out<i class="fa-solid fa-right-from-bracket"></i></a></li>
+                        <li><a href="index.html">Log-Out<i class="fa-solid fa-right-from-bracket"></i></a></li>
                     </ul>
                 </div>
             </div>
+             <!-- create new task -->
+             <div class="add-new-driver add-new-task">
+                <a href="#" class="btn btn-danger close-btn"><i class="fa-solid fa-xmark"></i></a>
+                <h3>Create a New Task</h3>
+                <form action="" class="row" >
+                    <div class="col-lg-6">
+                        <label for="">Recipient Name</label><input type="text" class="form-control my-2 wh">
+                        <label for="">More Information Address</label><input type="text" class="form-control my-2 wh">
+                        <label for="">Date of Execution</label><input type="date" class="form-control my-2 wh">
+                        <label for="">Details</label><textarea name="" id="" cols="20" rows="5" class="form-control my-2"></textarea>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="">Recipient Address</label><input type="text" class="form-control my-2 wh">
+                        <label for="">Mobile Number</label><input type="text" class="form-control my-2 wh">
+                        <label for="">Her Certificate</label><input type="text" class="form-control my-2 wh">
+                        <label for="">Instructions to the Driver</label><textarea name="" id="" cols="20" rows="5" class="form-control my-2"></textarea>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="">To an Hour</label><select name="" id="" class="form-select wh">
+                            <option value="">New</option>
+                            <option value="">Team for the Driver</option>
+                            <option value="">Done</option>
+                            <option value="">In Execution</option>
+                            <option value="">Fails</option>
+                            <option value="">Cancelled</option>
+                        </select>
+                        <label for="">Quantity</label><input type="number" class="form-control my-2 wh">
+                        
+                       
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="">From an Hour</label><select name="" id="" class="form-select wh">
+                            <option value="">New</option>
+                            <option value="">Team for the Driver</option>
+                            <option value="">Done</option>
+                            <option value="">In Execution</option>
+                            <option value="">Fails</option>
+                            <option value="">Cancelled</option>
+                        </select>
+                        <label for="">Service Times(minutes)</label><input type="number" class="form-control my-2 wh">
+                        
+                    
+                    </div>
+                   <div class="col-lg-4">
+                    <label for="">Status / Situation</label><select name="" id="" class="form-select wh">
+                        <option value="">New</option>
+                        <option value="">Team for the Driver</option>
+                        <option value="">Done</option>
+                        <option value="">In Execution</option>
+                        <option value="">Fails</option>
+                        <option value="">Cancelled</option>
+                    </select>
+                    
+                    <label for="">Manager's Note</label><input type="text" class="form-control my-2 wh">
+                   
+                   </div>
+                 <div class="col-lg-6">
+                <label for="">Reminder(minutes before)</label><select name="" id="" class="form-select wh">
+                <option value="">New</option>
+                <option value="">Team for the Driver</option>
+                <option value="">Done</option>
+                <option value="">In Execution</option>
+                <option value="">Fails</option>
+                <option value="">Cancelled</option>
+                </select>
+                </div>
+                <div class="col-lg-6">
+                <label for="">Reminder Note</label><input type="text" class="form-control my-2 wh">
+                </div>
+                <div class="col-lg-12">
+                <input type="submit" value="Add Task" class="form-control btn btn-dark my-2 wh">
+                </div>
+          
+            </form>
+            </div>
             <div class="col-lg-12 table-section px-3">
                 <h3 class="table-title">Tasks</h3>
-                <a href="add-new-task.html" class="btn btn-dark add-new-btn"><i class="fa-solid fa-plus"></i>Add New
-                    Task</a>
+                <a href="#" class="btn btn-dark add-new-btn add-new-driver-btn"><i class="fa-solid fa-plus"></i>Add New</a>
                 <div class="search-area">
                     <input type="text" class="form-control ts-box search-field" placeholder="Search There">
                     <select name="" id="status-select" class="form-select ts-box on-change"
@@ -128,37 +209,13 @@
                                 <td class="status-icon"><i class="fa-solid fa-car"></i></td>
                                 <td class="upload-date">Date:10-01-23</td>
                                 <td class="status">
-                                    <p class="btn btn-success">Done</p>
+                                     Done
                                 </td>
                                 <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
                             </tr>
                     </table>
                 </div>
-                <!-- <div class="task-details-list">
-                    <div class="task-id">
-                        <p>40327</p>
-                    </div>
-                    <div class="task-name">
-                        <h3>  Reuven 1, Rishon Lezion</h3>
-                        <p>Pick a roll</p>
-                    </div>
-                    <div class="task-point">
-                        <p>Marina Kleiman 05057571252</p>
-                    </div>
-                    <div class="status-icon">
-                        <i class="fa-solid fa-car"></i>
-                    </div>
-                    <div class="upload-date">
-                        <p>Date:10-01-23</p>
-                    </div>
-                    <div class="status">
-                        <p class="btn btn-primary">new</p>
-                    </div>
-                    <div class="location-select">
-                        <i class="fa-regular fa-location-dot"></i>
-                    </div>
-                </div> -->
-
+              
             </div>
         </div>
     </div>
@@ -166,7 +223,19 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
 <script>
-   
+   $(".on-change").on('change',function(){
+    var word = $(this).val();
+   // alert(word);
+   if(word == 0){
+    $('.task-list tr').show();
+   }
+   else{
+   $('.task-list tr').hide();
+   $('.task-list td').filter(function(){
+    return $(this).text() == word;
+   }).parent().show();
+}
+})
 </script>
 
 </body>

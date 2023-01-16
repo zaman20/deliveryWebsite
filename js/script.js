@@ -1,15 +1,29 @@
-//alert("hello");
-$('.on-change').on('change',function(){
-    let data =$(this).val();
-    if(data == 0){$('.task-list tr').show();}
 
-    else{
-   // alert(data);
+// $('.on-change').on('change',function(){
+//     let data =$(this).val();
+//     if(data == 0){$('.task-list tr').show();}
+
+//     else{
+//     alert(data);
+// //   $('.task-list tr').hide();
+// //   $('.task-list td ').filter(function(){
+// //     return $(this).text() == data;
+// //    }).parent().show();}
+// });
+
+$(".on-change").on('change',function(){
+    var word = $(this).val();
+   // alert(word);
+   if(word == 0){
+    $('.task-list tr').show();
+   }
+   else{
    $('.task-list tr').hide();
-   $('.task-list td ').filter(function(){
-    return $(this).text()==data;
-   }).parent().show();}
-});
+   $('.task-list td').filter(function(){
+    return $(this).text() == word;
+   }).parent().show();
+}
+})
 //search by typing
 let input = document.querySelector(".search-field");
 input.addEventListener('keyup',(e)=>{
@@ -28,10 +42,10 @@ $(document.body).on('click',"tr[data-href]",function(){
 
 // add_new
 $(".add-new-driver-btn").on('click',function(){
-    //alert('hi');
+
     $('.add-new-driver').addClass("add-new-driver-come");
 });
 $(".close-btn").on('click',function(){
-    //alert('hi');
+
     $('.add-new-driver').removeClass("add-new-driver-come");
 })
