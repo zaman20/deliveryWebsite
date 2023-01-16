@@ -82,7 +82,7 @@
                 </div>
             </form>
             </div>
-
+<!-- table section -->
             <div class="col-lg-12 table-section px-3">
                 <h3 class="table-title">Users</h3>
                 <a href="#" class="btn btn-dark add-new-btn add-new-driver-btn"><i class="fa-solid fa-plus"></i>Add New</a>
@@ -116,8 +116,8 @@
                                     <p class="btn btn-primary">Active</p>
                                 </td>
                                 <td >
-                                    <a class="btn btn-warning" title="Edit"><i class="fa-solid fa-pen" ></i></a>
-                                    <a class="btn btn-danger"  title="Delete"><i class="fa-solid fa-trash"></i></a>
+                                    <a class="btn btn-warning edit-btn" title="Edit"><i class="fa-solid fa-pen" ></i></a>
+                                    <a class="btn btn-danger dlt-btn"  title="Delete"><i class="fa-solid fa-trash"></i></a>
                                 </td>
                                 
  
@@ -132,8 +132,8 @@
                                     <p class="btn btn-primary">Active</p>
                                 </td>
                                 <td >
-                                    <a class="btn btn-warning" title="Edit"><i class="fa-solid fa-pen" ></i></a>
-                                    <a class="btn btn-danger"  title="Delete"><i class="fa-solid fa-trash"></i></a>
+                                    <a class="btn btn-warning edit-btn" title="Edit"><i class="fa-solid fa-pen" ></i></a>
+                                    <a class="btn btn-danger dlt-btn"  title="Delete"><i class="fa-solid fa-trash"></i></a>
                                 </td>
  
                             </tr>
@@ -148,21 +148,45 @@
                                     <p class="btn btn-primary">Active</p>
                                 </td>
                                 <td >
-                                    <a class="btn btn-warning" title="Edit"><i class="fa-solid fa-pen" ></i></a>
-                                    <a class="btn btn-danger"  title="Delete"><i class="fa-solid fa-trash"></i></a>
+                                    <a class="btn btn-warning edit-btn" title="Edit"><i class="fa-solid fa-pen" ></i></a>
+                                    <a class="btn btn-danger dlt-btn"  title="Delete"><i class="fa-solid fa-trash"></i></a>
                                 </td>
                             </tr>    
                     </table>
                 </div>
             </div>
+
+<!-- edit form -->
+<div class="edit-new-driver ">
+    <a href="#" class="btn btn-danger close-btn"><i class="fa-solid fa-xmark"></i></a>
+    <h3>Edit User Details</h3>
+    <form action="" class="row" >
+        <div class="col-lg-6">
+            <label for="">Driver's Name</label><input type="text" class="form-control my-2 wh">
+            <label for="">Email Address</label><input type="text" class="form-control my-2 wh">
+            <label for="">Date of Execution</label><input type="date" class="form-control my-2 wh">
+            
+        </div>
+        <div class="col-lg-6">
+            <label for="">Driver's Address</label><input type="text" class="form-control my-2 wh">
+            <label for="">Mobile Number</label><input type="text" class="form-control my-2 wh">
+            <label for="">Her Certificate</label><input type="text" class="form-control my-2 wh">
+        </div>
+
+    
+    <div class="col-lg-12">
+        <label for="">Details</label><textarea name="" id="" cols="20" rows="5" class="form-control my-2"></textarea>
+    <input type="submit" value="Update" class="form-control btn btn-dark my-2 wh">
+    </div>
+
+</form>
+</div>            
+
         </div>
     </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-      
-    </script>
 
 </body>
 </html>

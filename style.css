@@ -203,7 +203,7 @@
     font-size: 18px;
     font-weight: 300;
 }
-.add-new-task, .add-new-driver{
+.add-new-task, .add-new-driver, .edit-new-driver {
     margin: 0 auto;
     background: #dddcdc;
     padding: 10px 20px;
@@ -228,7 +228,9 @@
     visibility: visible;
     opacity: 1;
 }
-.add-new-task h3, .add-new-driver h3{
+
+
+.add-new-task h3, .add-new-driver h3, .edit-new-driver h3{
     text-align: center;
     margin-top: 20px;
 }

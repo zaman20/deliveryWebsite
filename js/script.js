@@ -45,7 +45,31 @@ $(".add-new-driver-btn").on('click',function(){
 
     $('.add-new-driver').addClass("add-new-driver-come");
 });
+$(".edit-btn").on('click',function(){
+
+    $('.edit-new-driver').addClass("add-new-driver-come");
+});
 $(".close-btn").on('click',function(){
 
     $('.add-new-driver').removeClass("add-new-driver-come");
+    $('.edit-new-driver').removeClass("add-new-driver-come");
+});
+$(".dlt-btn").on("click",function(){
+
+    swal({
+        title: "Are you sure?",
+        text: "Once deleted, you will not be able to recover this imaginary file!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+          swal("Poof! Your imaginary file has been deleted!", {
+            icon: "success",
+          });
+        } else {
+          swal("Your imaginary file is safe!");
+        }
+      });
 })
