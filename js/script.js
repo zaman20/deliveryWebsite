@@ -1,16 +1,4 @@
 
-// $('.on-change').on('change',function(){
-//     let data =$(this).val();
-//     if(data == 0){$('.task-list tr').show();}
-
-//     else{
-//     alert(data);
-// //   $('.task-list tr').hide();
-// //   $('.task-list td ').filter(function(){
-// //     return $(this).text() == data;
-// //    }).parent().show();}
-// });
-
 $(".on-change").on('change',function(){
     var word = $(this).val();
    // alert(word);
@@ -72,4 +60,4 @@ $(".dlt-btn").on("click",function(){
           swal("Your imaginary file is safe!");
         }
       });
-})
+});

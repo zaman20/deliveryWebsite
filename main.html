@@ -24,8 +24,30 @@
                         <li><a href="trucks.html">Tracks<i class="fa-solid fa-truck"></i></a></li>
                     </ul>
                 </div>
+                <i class="fa-solid fa-bars open-icon "></i>
+                <i class="fa-solid fa-xmark close-icon"></i>
+                <!-- mobile menu -->
+                    <div class="mobile-menu">
+                        
+                        <ul>
+                            <li><a href=""><img src="img/short_logo.png" alt=""> Delivery</a></li>
+                            <li><a href="main.html">Main<i class="fa-solid fa-list"></i></a></li>
+                            <li><a href="task.html">Tasks<i class="fa-solid fa-list-check"></i></a></li>
+                            <li><a href="trucks.html">Tracks<i class="fa-solid fa-truck"></i></a></li>
 
-               
+                            <li><a href="">More<i class="fa-sharp fa-solid fa-caret-down"></i>
+                                <ul>
+                                    <li><a href="users.html">Users</a></li>
+                                    <li><a href="drivers.html">Drivers</a></li>
+                                    <li><a href="inviting-factor.html">Inviting Factor</a></li>
+                                </ul>
+                            </a></li>
+                            <li><a href="">Distribution Area<i class="fa-solid fa-list"></i></a></li>
+                            <li><a href="">Profile<i class="fa-solid fa-user"></i></a></li>
+                            <li><a href="index.html">Log-Out<i class="fa-solid fa-right-from-bracket"></i></a></li>
+                        </ul>
+                    </div>
+                <!-- left -->
                 <div class="left-menu">
                     <ul>
                         <li><a href="">More<i class="fa-sharp fa-solid fa-caret-down"></i>
@@ -138,5 +160,22 @@
             </div>
         </div>
     </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+         $('.open-icon').on('click',function(){
+    $('.mobile-menu').addClass("mobile-menu-come");
+    $('.open-icon').hide();
+    $('.close-icon').show();
+  
+  });
+  $('.close-icon').on('click',function(){
+    $('.mobile-menu').removeClass("mobile-menu-come");
+    $('.open-icon').show();
+    $('.close-icon').hide();
+  
+  });
+    </script>
 </body>
 </html>
