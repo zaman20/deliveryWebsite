@@ -116,6 +116,22 @@
           
                  </form>
             </div>
+               <!-- create new message -->
+               <div class="add-new-driver new-message">
+                <a href="#" class="btn btn-danger close-btn"><i class="fa-solid fa-xmark"></i></a>
+                <h3>Send Message</h3>
+                <form action="" class="row" >
+                    <div class="col-lg-12">
+                        <label for="">Recipient Name</label><input type="text" class="form-control my-2 wh">
+                        <label for="">Details</label><textarea name="" id="" cols="20" rows="5" class="form-control my-2"></textarea>
+                    </div>
+                    
+                    <div class="col-lg-12">
+                        <input type="submit" value="Send Message" class="form-control btn btn-dark my-2 wh">
+                    </div>
+            
+                 </form>
+            </div>
 <!-- Table content -->
             <div class="col-lg-12 px-3">
                 <div class="details">
@@ -126,6 +142,7 @@
                     <p class="sift-status btn btn-dark">New</p>
                 </div>
                 <div class="data-part">
+                    <p> Lior Lifshitz a subscription of 100 messages</p>
                     <table class="table table-light">
                         <thead>
                          
@@ -178,9 +195,9 @@
                      </table>
               
                     <a href="#" class="btn btn-warning opt-btn my-3 opt-edit"><i class="fa-solid fa-pen"></i>Edit</a>
-                    <button class="btn btn-dark opt-btn my-3"><i class="fa-solid fa-caret-down"></i>Option</button>
+                    <a href="#" class="btn btn-dark opt-btn my-3"><i class="fa-solid fa-caret-down"></i>Print</a>
                     <button class="btn btn-primary opt-btn my-3"><i class="fa-solid fa-bars"></i>History</button>
-                    <button class="btn btn-secondary opt-btn my-3"><i class="fa-regular fa-message"></i>Message</button>
+                    <a href="#" class="btn btn-secondary opt-btn my-3 opt-msg"><i class="fa-regular fa-message"></i>Message</a>
                 </div>
                 <div class="map-part"></div>
                 <div class="bottom-part">
@@ -197,9 +214,13 @@
         $('.opt-edit').on("click",function(){
             $(".edit-new-driver").addClass("add-new-driver-come");
         });
+        $('.opt-msg').on("click",function(){
+            $(".new-message").addClass("add-new-driver-come");
+        });
         $(".close-btn").on('click',function(){
 
         $('.edit-new-driver').removeClass("add-new-driver-come");
+        $('.new-message').removeClass("add-new-driver-come");
         });
 
 </script>

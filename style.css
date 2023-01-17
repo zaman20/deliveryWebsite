@@ -48,7 +48,7 @@
 .right-menu ul li:hover>a, .left-menu ul li:hover> a{
     text-decoration: underline;
 }
-.table-section{clear:both;}
+.table-section{clear:both;margin-top: 20px;}
 .table-title{
     width:80%;
     float:right;
@@ -247,4 +247,40 @@
 }
 .truck-status{
     width: 18%;
+}
+.box {
+    width: 330px;
+    height: auto;
+    background: orange;
+    padding: 10px 20px;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 31px;
+    color: white;
+    font-weight: 500;
+    padding-top: 27px;
+    padding-bottom: 40px;
+}
+.date{background:#be47eb ;}
+.total{background: orange;}
+.done{background: #56cfff;}
+.ntc{background: #01b8b5;}
+.fails{background: orangered;}
+.tfd{background: #4850ff;}
+.cancel{background: #960311;}
+.new{background: #09ac21;}
+
+.title-border {
+    width: 100%;
+    background-color: #4850ff;
+    color: white;
+    height: 51px;
+    padding-top: 4px;
+    padding-right: 26px;
+    font-size: 32px;
+}
+.sH {
+    height: 52px;
+    margin-top: 7px;
 }

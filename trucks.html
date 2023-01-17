@@ -41,9 +41,49 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-12 table-section px-3">
-                <h3 class="table-title">Trucks</h3>
+            <!-- Add New track-->
+             <!-- create new task -->
+             <div class="add-new-driver ">
+                <a href="#" class="btn btn-danger close-btn"><i class="fa-solid fa-xmark"></i></a>
+                <h3>Create a New Track</h3>
+                <form action="" class="row" >
+                    <div class="col-lg-6">
+                        <label for="">Route Name</label><input type="text" class="form-control my-2 wh">
+                        <label for="">Driver</label><select name="" id="dirverName" class="form-select sH" aria-label="Default select example">
+                            <option value="1">without a driver</option>
+                            <option value="Zuki">Zuki</option>
+                            <option value="Eden">Eden</option>
+                            <option value="Moshe Kozari">Moshe Kozari</option>
+                            <option value="Gerry">Gerry</option>
+                        </select>
+                        <label for="">Starting Address</label><input type="text" class="form-control my-2 wh">
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="">Date</label><input type="date" class="form-control my-2 wh">
+                       
+                        <label for="">Beging Time</label><select name="" id="dirverName" class="form-select sH" aria-label="Default select example">
+                            <option value="8">8.00</option>
+                            <option value="9">9.00</option>
+                            <option value="10">10.00</option>
+                            <option value="11">11.00</option>
+                            <option value="12">12.00</option>
+                        </select>
+                        <label for="">Terminating Address</label><input type="text" class="form-control my-2 wh">
+                    </div>
+        
+                
+                <div class="col-lg-12">
+                    <label for="">Message to the Driver</label><textarea name="" id="" cols="20" rows="5" class="form-control my-2"></textarea>
+                <input type="submit" value="Add Route" class="form-control btn btn-dark my-2 wh">
+                </div>
           
+            </form>
+            </div>
+
+            <div class="col-lg-12 table-section px-3">
+                <h3 class="table-title">Tracks</h3>
+                <a href="#" class="btn btn-dark add-new-btn add-new-driver-btn"><i class="fa-solid fa-plus"></i>Add New</a>
               <div class="search-area">
                 <input type="text" class="form-control s-box search-field" placeholder="Search There">
                 <select name="" id="dirverName" class="form-select s-box on-change" aria-label="Default select example">
@@ -75,7 +115,7 @@
                         <td class="task-point">Points & KM</td>
                         <td class="upload-date">Date & Time</td>
                     </tr>
-                        <tr class="task-details-list" data-href="task-single.html">
+                        <tr class="task-details-list" data-href="truk-single-person.html">
                             <td class="task-id">40324</td>
                             <td class="truck-task-name">Eden</td>
                             <td class="truck-note">Pick a roll</td>
@@ -83,7 +123,7 @@
                             <td class="task-point">Points: 22 , KM:450</td>
                             <td class="upload-date">Date:01/11/2023</td>
                         </tr>
-                        <tr class="task-details-list" data-href="task-single.html">
+                        <tr class="task-details-list" data-href="truk-single-person.html">
                             <td class="task-id">40324</td>
                             <td class="truck-task-name">Zuki</td>
                             <td class="truck-note">Pick a roll</td>
@@ -91,7 +131,7 @@
                             <td class="task-point">Points: 22 , KM:450</td>
                             <td class="upload-date">Date:01/11/2023</td>
                         </tr>
-                        <tr class="task-details-list" data-href="task-single.html">
+                        <tr class="task-details-list" data-href="truk-single-person.html">
                             <td class="task-id">40324</td>
                             <td class="truck-task-name">Gerry</td>
                             <td class="truck-note">Pick a roll</td>
@@ -102,26 +142,7 @@
                    
                 </table>
             </div>
-<!-- 
-              <div class="truck-details-list">
-                <div class="trucks-name">
-                    <h3>Ronnie Ronnie</h3>
-                    <span>40327</span>
-                    <span class="btn btn-warning">Has been Discontinued</span>
-                </div>
-                <div class="trucks-point">
-                    <p>Points: 22</p>
-                    <p>KM: 403</p>
-                </div>
-                <div class="delivery-time">
-                    <p>22 hours</p>
-                    <p>11 minutes</p>
-                </div>
-                <div class="upload-date-time">
-                    <p>Time:12.00</p>
-                    <p>Date:10-01-23</p>
-                </div>
-              </div> -->
+
         
             </div>
         </div>
