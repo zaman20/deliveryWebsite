@@ -61,3 +61,16 @@ $(".dlt-btn").on("click",function(){
         }
       });
 });
+// mobile menu
+$('.open-icon').on('click',function(){
+  $('.mobile-menu').addClass("mobile-menu-come");
+  $('.open-icon').hide();
+  $('.close-icon').show();
+
+});
+$('.close-icon').on('click',function(){
+  $('.mobile-menu').removeClass("mobile-menu-come");
+  $('.open-icon').show();
+  $('.close-icon').hide();
+
+});

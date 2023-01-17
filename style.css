@@ -343,7 +343,3 @@
     visibility: visible;
     opacity: 1;
 }
-@media  only screen and (min-width:200px) and (max-width:999px) {
-    .open-icon{display: block;}
-    .left-menu,.right-menu{display:none;}
-}

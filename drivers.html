@@ -15,6 +15,7 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- style sheet link -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
@@ -29,7 +30,30 @@
                         <li><a href="trucks.html">Tracks<i class="fa-solid fa-truck"></i></a></li>
                     </ul>
                 </div>
+<!-- mobile menu -->
+<i class="fa-solid fa-bars open-icon "></i>
+<i class="fa-solid fa-xmark close-icon"></i>
+  
+  <div class="mobile-menu">
+        
+    <ul>
+        <li><a href=""><img src="img/short_logo.png" alt=""> Delivery</a></li>
+        <li><a href="main.html">Main<i class="fa-solid fa-list"></i></a></li>
+        <li><a href="task.html">Tasks<i class="fa-solid fa-list-check"></i></a></li>
+        <li><a href="trucks.html">Tracks<i class="fa-solid fa-truck"></i></a></li>
 
+        <li><a href="">More<i class="fa-sharp fa-solid fa-caret-down"></i>
+            <ul>
+                <li><a href="users.html">Users</a></li>
+                <li><a href="drivers.html">Drivers</a></li>
+                <li><a href="inviting-factor.html">Inviting Factor</a></li>
+            </ul>
+        </a></li>
+        <li><a href="">Distribution Area<i class="fa-solid fa-list"></i></a></li>
+        <li><a href="">Profile<i class="fa-solid fa-user"></i></a></li>
+        <li><a href="index.html">Log-Out<i class="fa-solid fa-right-from-bracket"></i></a></li>
+    </ul>
+</div>
                 
                 <div class="left-menu">
                     <ul>
@@ -84,7 +108,7 @@
                     </select>
                 </div>
                 <!-- details list -->
-                <div class="task-list">
+                <div class="task-list table-responsive-md table-responsive-sm">
                     <table class="table table-striped ">
                         <tr>
                             <td class="task-id">Id</td>
