@@ -60,7 +60,6 @@ $(".dlt-btn").on("click",function(){
           swal("Your imaginary file is safe!");
         }
       });
-});
 // mobile menu
 $('.open-icon').on('click',function(){
   $('.mobile-menu').addClass("mobile-menu-come");
@@ -73,4 +72,4 @@ $('.close-icon').on('click',function(){
   $('.open-icon').show();
   $('.close-icon').hide();
 
-});
+})
