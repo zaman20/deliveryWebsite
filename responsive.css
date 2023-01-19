@@ -8,14 +8,19 @@
     .details .driver-name{width: 50%;}
     .data-part{width: 100%;}
     .ts-box{width: 184px;}
+    .login-box{width: 80%;}
 }
 
 @media only screen and (min-width:200px) and (max-width:480px){
-    .table-title{width: 63%;}
+    .table-title{width: 48%;}
     .add-new-btn{width:37%;}
     .details{width:95%; flex-direction: column; margin-top: 20px;}
     .ts-box{width: 160px;}
     .add-new-task, .add-new-driver, .edit-new-driver{width: 100%;left: 0;}
     .opt-btn{width: 159px;}
     .s-box{width:48%;}
+    .more-menu-list{height: 269px;}
+    .export-btn {width: 154px;height: 43px;}
+    .box{width:282px;height:115px;margin:10px auto;}
+    .login-box{width:99%;}
 }

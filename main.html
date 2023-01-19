@@ -38,13 +38,7 @@
                             <li><a href="task.html">Tasks<i class="fa-solid fa-list-check"></i></a></li>
                             <li><a href="trucks.html">Tracks<i class="fa-solid fa-truck"></i></a></li>
 
-                            <li><a href="">More<i class="fa-sharp fa-solid fa-caret-down"></i>
-                                <ul>
-                                    <li><a href="users.html">Users</a></li>
-                                    <li><a href="drivers.html">Drivers</a></li>
-                                    <li><a href="inviting-factor.html">Inviting Factor</a></li>
-                                </ul>
-                            </a></li>
+                            <li><a href="#" class="more-menu"><i class="fa-solid fa-gear open-gear"></i><i class="fa-sharp fa-solid fa-gear close-gear"></i></a></li>
                             <li><a href="">Distribution Area<i class="fa-solid fa-list"></i></a></li>
                             <li><a href="">Profile<i class="fa-solid fa-user"></i></a></li>
                             <li><a href="index.html">Log-Out<i class="fa-solid fa-right-from-bracket"></i></a></li>
@@ -52,19 +46,23 @@
                     </div>
                 <!-- left -->
                 <div class="left-menu">
+                    
                     <ul>
-                        <li><a href="">More<i class="fa-sharp fa-solid fa-caret-down"></i>
-                            <ul>
-                                <li><a href="users.html">Users</a></li>
-                                <li><a href="drivers.html">Drivers</a></li>
-                                <li><a href="inviting-factor.html">Inviting Factor</a></li>
-                            </ul>
-                        </a></li>
+                        <li><a href="#" class="more-menu"><i class="fa-solid fa-gear open-gear"></i><i class="fa-sharp fa-solid fa-gear close-gear"></i></a></li>
                         <li><a href="">Distribution Area<i class="fa-solid fa-list"></i></a></li>
                         <li><a href="">Profile<i class="fa-solid fa-user"></i></a></li>
                         <li><a href="index.html">Log-Out<i class="fa-solid fa-right-from-bracket"></i></a></li>
                     </ul>
                 </div>
+            </div>
+            <div class="more-menu-list">
+                <a href="drivers.html">Drivers</a>
+                <a href="inviting-factor.html">Inviting Factor</a>
+                <a href="users.html">Users</a>
+                <a href="tags.html">Tags</a>
+                <a href="event-actions.html">Event Sheduling</a>
+                <a href="company-setting.html">Setting</a>
+                <a href="data-import.html">Import Data</a>
             </div>
             <div class="col-lg-12 table-section px-3 my-2">
                 <h3 class="table-title">Mission Mode</h3>
@@ -82,84 +80,52 @@
 
             <!-- list of latest mission -->
             <div class="col-lg-12 table-section px-3">
-                <h3 class="table-title title-border">The Last 10 Missions</h3>
-                <table class="table ">
-                   <thead>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th>Total</th>
-                            <th>Done</th>
-                            <th>Not Carried Out</th>
-                            <th>Fails</th>
-                        </tr>
-                    </thead>
-                    <tr class="table-active">
-                        <td><span>sunday in two ways</span>01/15</td>
-                        <td></td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>8</td>
-                        <td>0</td>
-                    </tr>
-                    <tr >
-                        <td>Eden<i class="fa-solid fa-user"></i></td>
-                        <td>Caesarea <span>40953</span></td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>8</td>
-                        <td>0</td>
-                    </tr>
-                    <tr >
-                        <td>Roni<i class="fa-solid fa-user"></i></td>
-                        <td>Ronnie <span>40953</span></td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>8</td>
-                        <td>0</td>
-                    </tr>
-                    <tr >
-                        <td>Wirhout A Driver<i class="fa-solid fa-user"></i></td>
-                        <td>Without Truck <span>40953</span></td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>8</td>
-                        <td>0</td>
-                    </tr> 
-                    <!-- ============ -->
-                    <tr class="table-active">
-                        <td><span>Last two weeks ago</span>01/11</td>
-                        <td></td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>8</td>
-                        <td>0</td>
-                    </tr>
-                    <tr >
-                        <td>Eden<i class="fa-solid fa-user"></i></td>
-                        <td>Caesarea <span>40953</span></td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>8</td>
-                        <td>0</td>
-                    </tr>
-                    <tr >
-                        <td>Roni<i class="fa-solid fa-user"></i></td>
-                        <td>Ronnie <span>40953</span></td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>8</td>
-                        <td>0</td>
-                    </tr>
-                    <tr >
-                        <td>Wirhout A Driver<i class="fa-solid fa-user"></i></td>
-                        <td>Without Truck <span>40953</span></td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>8</td>
-                        <td>0</td>
-                    </tr> 
-                </table>
+                <h3 class="table-heading title-border">The Last 10 Missions</h3>
+                <div class="task-list table-responsive-md table-responsive-sm">
+                    <table class="table ">
+                        
+                            <tr class="task-details-list" data-href="task-single.html">
+                                <td class="task-id">40324</td>
+                                <td class="task-name"> Reuven 1, Rishon Lezion</td>
+                                <td class="factor">Pick a roll</td>
+                                <td class="task-point">Marina Kleiman 05057571252</td>
+                                <td>Eden</td>
+                                <td class="status-icon"><i class="fa-solid fa-car"></i></td>
+                                <td class="upload-date">Date:01/11/2023</td>
+                                <td class="status">
+                                    <p class="btn btn-primary">New</p>
+                                </td>
+                                <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
+                            </tr>
+                       
+                            <tr class="task-details-list" data-href="task-single.html">
+                                <td class="task-id">40384</td>
+                                <td class="task-name">Reuven 1, Rishon Lezion</td>
+                                <td class="factor">BUBL</td>
+                                <td class="task-point">Marina Kleiman 05057571252</td>
+                                <td>Zuki</td>
+                                <td class="status-icon"><i class="fa-solid fa-car"></i></td>
+                                <td class="upload-date">Date:10-01-23</td>
+                                <td class="status">
+                                    <p class="btn btn-danger">Cancelled</p>
+                                </td>
+                                <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
+                            </tr>
+                            <tr class="task-details-list" data-href="task-single.html">
+                                <td class="task-id">40329</td>
+                                <td class="task-name"> Reuven 1, Rishon Lezion</td>
+                                <td class="factor">Comjet</td>
+                                <td class="task-point">Marina Kleiman 05057571252</td>
+                                <td>Roni</td>
+                                <td class="status-icon"><i class="fa-solid fa-car"></i></td>
+                                <td class="upload-date">Date:10-01-23</td>
+                                <td class="status">
+                                     Done
+                                </td>
+                                <td class="location-select"><i class="fa-regular fa-location-dot"></i></td>
+                            </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -177,8 +143,19 @@
     $('.mobile-menu').removeClass("mobile-menu-come");
     $('.open-icon').show();
     $('.close-icon').hide();
+    $('.more-menu-list').hide();
   
   });
+  $('.open-gear').on('click',function(){
+    $('.more-menu-list').show();
+    $('.close-gear').show();
+    $('.open-gear').hide();
+  });
+  $('.close-gear').on('click',function(){
+    $('.more-menu-list').hide();
+    $('.close-gear').hide();
+    $('.open-gear').show();
+  })
     </script>
 </body>
 </html>
